@@ -1,0 +1,317 @@
+:root{
+    background: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    outline: none ;
+    border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+section{
+    padding: 2rem 9%;
+}
+.sub-titulo{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgb(255, 243, 245);
+}
+.sub-titulo span{
+    color: rgb(253, 194, 204) ;
+
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-size: 1.7rem;;
+}
+.btn:hover{
+    background: pink;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    padding: 2rem 9%;
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1) ;
+}
+nav>a{
+    text-decoration: none;
+}
+div>a{
+    text-decoration: none;
+}
+header .logo{
+    font-size: 5rem;
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+    align-items: initial;
+}
+header .logo span{
+    color: pink;
+}
+header .navbar a{
+    font-size: 2rem ;
+    padding: 0 1.5rem;
+    color: white;
+}
+header .navbar a:hover{
+    color: pink;
+}
+header .icons a{
+    font-size: 2.5rem;
+    color:white;
+    margin-left: 1.5rem;
+} 
+header .icons a:hover{
+    color: pink;
+}
+header .icons #subir-arriba a{
+    font-size: 5rem;
+    color: #666;
+}
+header .icons #subir-arriba a:hover{
+    color: pink;
+}
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    font-size: 3rem ;
+    color: #fff;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0,0,0,.3) ;
+    display: none;
+}
+
+/*Boton de subir arriba:*/
+
+#subir-arriba{
+    width: 70px;
+    height: 70px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+/*Inicio:*/
+
+.inicio{
+    position: relative;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+}
+.contenido-imagen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.contenido-imagen img{
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50% -50%);
+}
+.inicio .contenido{
+    width: 50rem;
+}
+.inicio .contenido h3{
+    font-size: 5rem;
+    color: #333;
+}
+.inicio .contenido span{
+    font-size: 5rem;
+    color: pink;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+/*Historia:*/
+
+.records .contenido{
+    flex: 1 1 40rem;
+    padding: 2rem 9%;
+    display: contents;
+    padding-bottom: 3rem;
+}
+.records .contenido p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1.5rem 0;
+    padding-top: 1rem;
+    line-height: 3rem;
+    color: #333;
+    text-align: justify;
+}
+
+/*Canciones:*/
+
+.canciones .contenido{
+    flex: 1 1 40rem;
+    padding: 2rem 9%;
+    display: contents;
+    padding-bottom: 3rem;
+}
+.canciones .fila{
+    padding-top: 4rem;
+}
+.canciones .contenido p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1.5rem 0;
+    padding-top: 1rem;
+    line-height: 3rem;
+    color: #333;
+    text-align: justify;
+}
+.canciones .contenido h3 span{
+    font-size: 3rem;
+    color: pink;
+}
+.canciones .contenido h3{
+    font-size: 3rem;
+}
+.canciones  .video-contenedor a{
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+/*Pie de Pagina:*/
+
+.footer .box-contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.footer .box-contenedor .box{
+    flex: 0 0  25rem;
+}
+.footer .box-contenedor .box h3{
+    color: #333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.footer .box-contenedor .box a{
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.footer .box-contenedor .box a:hover{
+    color: pink;
+    text-decoration: underline;
+}
+.footer .box-contenedor .box img{
+    margin-top: -1rem;
+    width: 30rem;
+    height: 10rem;
+    padding: 1rem 0;
+}
+.footer .credito{
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #333;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    background: black;
+}
+.footer .credito span{
+    color: pink;
+}
+
+/*Para que la pagina sea responsiva:*/
+
+@media (max-width:991px)
+{
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+
+    }
+    .inicio{
+        background-position: left;
+    }
+}
+@media (max-width:768px )
+ {
+    html .fa-bars{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border: .1rem solid rgba(0,0,0,.1) ;
+        clip-path: polygon(0 0,100% 0, 100% 0, 0 0);
+    }
+    header #toggler:checked ~ .navbar{
+        clip-path:polygon(0 0,100% 0, 100% 100%, 0% 100%) ;
+    }
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background:  rgba(0,0,0,0.7);
+        border:.1rem solid rgba(0,0,0,.1) ;
+        display: block;
+    }
+    .inicio .contenido h3{
+        font-size: 5rem;
+    }
+    .inicio .contenido span{
+        font-size: 2.5rem;
+    }   
+}
+@media (max-width:450px)
+{
+    html{
+        font-size: 50%;
+    }
+    .sub-titulo{
+        font-size: 3rem;
+    }
+}
